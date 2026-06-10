@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import burgerMenu from "../data/data.js";
 
 const App = () => {
@@ -22,7 +23,12 @@ const App = () => {
   };
 
   const handelAddToCard = (item) => {
-    if (cart === 0) return;
+    if (cart === 0) {
+      toast.error("Please select a quantity", {
+        icon: "👆",
+      });
+      return;
+    }
 
     setCheckoutCart((prev) => {
       const existingItem = prev.items.find(
@@ -58,8 +64,9 @@ const App = () => {
         items: updatedItems,
         total: updatedItems.reduce((sum, item) => sum + item.totalPrice, 0),
       };
-    });
 
+    });
+      toast.success("Added to cart");
     setCart(0);
   };
 
@@ -85,13 +92,13 @@ const App = () => {
     setCheckoutCart((prev) => ({
       ...prev,
       items: prev.items.filter((item) => item.name !== itemName),
-    }))
-    // alert(itemName);
-  }
-
+    }));
+    toast.error("Removed from cart");
+  };
   return (
     <>
       <div className="min-h-screen bg-orange-50 flex flex-col items-center relative">
+        <Toaster position="top-right" reverseOrder={false} />
         <div
           className={`p-4 flex flex-col fixed top-0 left-0 w-1/2 md:w-1/3 lg:w-1/4 xl h-full bg-black text-white shadow ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out`}
         >
@@ -134,7 +141,10 @@ const App = () => {
                   <div className="place-content-end">
                     ${item.totalPrice.toFixed(2)}
                   </div>
-                  <div onClick={() => removeItemFromCheckout(item.name)} className="text-red-500 cursor-pointer">
+                  <div
+                    onClick={() => removeItemFromCheckout(item.name)}
+                    className="text-red-500 cursor-pointer"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
