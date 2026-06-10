@@ -69,6 +69,42 @@ const burgerMenu = [
       }
     ]
   }
+  ,
+  {
+    categoryName: "Drinks",
+    items: [
+      {
+        id: "drink-01",
+        name: "Classic Lime Margarita",
+        price: 7.49,
+        description: "Premium tequila, tart lime juice, and agave. Served over ice with a salted rim.",
+        rating: 4.6,
+        timeToMake: "3-5 mins",
+        calories: 210,
+        image: "/images/d1.png"
+      },
+      {
+        id: "drink-02",
+        name: "Sparkling Berry Lemonade",
+        price: 4.99,
+        description: "House-made lemonade with a sweet berry blend, fresh lemon, and mint.",
+        rating: 4.7,
+        timeToMake: "3-5 mins",
+        calories: 150,
+        image: "/images/d2.png"
+      },
+      {
+        id: "drink-03",
+        name: "Iced Caramel Macchiato",
+        price: 5.49,
+        description: "Rich espresso and cold milk over ice, finished with a sweet caramel drizzle.",
+        rating: 4.8,
+        timeToMake: "3-5 mins",
+        calories: 280,
+        image: "/images/d3.png"
+      }
+    ]
+  }
 ];
 
 export default burgerMenu;
