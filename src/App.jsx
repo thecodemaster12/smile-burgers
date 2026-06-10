@@ -104,7 +104,7 @@ const App = () => {
         >
           <div className="flex justify-end">
             <span
-              className="cursor-pointer mb-4 hover:rotate-180 transition-all duration-300 hover:text-red-500"
+              className="cursor-primary mb-4 hover:rotate-180 transition-all duration-300 hover:text-red-500"
               onClick={toggleSidebar}
             >
               <svg
@@ -143,7 +143,7 @@ const App = () => {
                   </div>
                   <div
                     onClick={() => removeItemFromCheckout(item.name)}
-                    className="text-red-500 cursor-pointer"
+                    className="text-red-500 cursor-primary"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +185,7 @@ const App = () => {
           </div>
           <div
             onClick={toggleSidebar}
-            className="flex gap-2 bg-black text-white px-3 py-2 rounded cursor-pointer"
+            className="flex gap-2 bg-black text-white px-3 py-2 rounded cursor-primary"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +219,7 @@ const App = () => {
                   setCurrentSelectedItem(category.items[0]);
                 }}
                 className={`
-                  cat-badge cursor-pointer
+                  cat-badge cursor-primary
                   ${
                     selectedCategory === category.categoryName
                       ? "active"
@@ -252,7 +252,7 @@ const App = () => {
                 <button
                   key={item.id}
                   onClick={() => setCurrentSelectedItem(item)}
-                  className="menu-item w-full text-left flex items-end hover:bg-black transition-all duration-150 px-2 py-1 rounded cursor-pointer text-gray-50 font-bold"
+                  className="menu-item w-full text-left flex items-end hover:bg-black transition-all duration-150 px-2 py-1 rounded cursor-primary text-gray-50 font-bold"
                 >
                   <span>{item.name}</span>
                   <span className="mx-2 flex-1 border-b border-dotted mb-1"></span>
@@ -354,7 +354,7 @@ const App = () => {
                   </div>
                   <button
                     onClick={() => handelAddToCard(currentSelectedItem)}
-                    className="add-to-cart bg-primary hover:bg-orange-400 transition-all duration-150 flex-1 rounded text-white text-xl font-bold"
+                    className="add-to-cart bg-primary hover:bg-orange-400 transition-all duration-150 flex-1 rounded text-white text-xl font-bold cursor-primary"
                   >
                     Add
                   </button>
