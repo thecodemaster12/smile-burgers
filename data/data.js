@@ -1,5 +1,30 @@
 const burgerMenu = [
   {
+    "categoryName": "Appetizers",
+    "items": [
+      {
+        "id": "appetizer-01",
+        "name": "Loaded Potato Skins",
+        "price": 6.99,
+        "description": "Crispy potato halves with melted cheddar, bacon bits, and green onions. Served with sour cream.",
+        "rating": 4.7,
+        "timeToMake": "8-10 mins",
+        "calories": 520,
+        "image": "/images/a1.png"
+      },
+      {
+        "id": "appetizer-02",
+        "name": "Buffalo Chicken Wings",
+        "price": 8.49,
+        "description": "Crispy wings tossed in signature spicy buffalo sauce. Served with celery and blue cheese dip.",
+        "rating": 4.8,
+        "timeToMake": "10-12 mins",
+        "calories": 640,
+        "image": "/images/a2.png"
+      }
+    ]
+  },
+  {
     categoryName: "Chicken Burgers",
     items: [
       {
@@ -68,8 +93,77 @@ const burgerMenu = [
         image: "/images/b3.png"
       }
     ]
-  }
-  ,
+  },
+  {
+    "categoryName": "Sandwiches",
+    "items": [
+      {
+        "id": "sandwich-01",
+        "name": "Turkey & Avocado Club",
+        "price": 9.49,
+        "description": "Triple-layered satisfaction with roasted turkey, creamy avocado, crisp bacon, lettuce, and tomato on multigrain bread.",
+        "rating": 4.6,
+        "timeToMake": "6-8 mins",
+        "calories": 540,
+        "image": "/images/s1.png"
+      },
+      {
+        "id": "sandwich-02",
+        "name": "Philly Cheesesteak",
+        "price": 10.49,
+        "description": "Thinly sliced ribeye steak, melted provolone, and sautéed peppers and onions on a toasted hoagie roll.",
+        "rating": 4.7,
+        "timeToMake": "8-10 mins",
+        "calories": 780,
+        "image": "/images/s2.png"
+      },
+      {
+        "id": "sandwich-03",
+        "name": "Caprese Panini",
+        "price": 8.99,
+        "description": "Fresh mozzarella, ripe tomatoes, basil leaves, and balsamic glaze on grilled sourdough bread.",
+        "rating": 4.5,
+        "timeToMake": "6-8 mins",
+        "calories": 490,
+        "image": "/images/s3.png"
+      }
+    ]
+  },
+  {
+    "categoryName": "Pizzas",
+    "items": [
+      {
+        "id": "pizza-01",
+        "name": "Pepperoni Feast Pizza",
+        "price": 12.99,
+        "description": "Crispy thin crust loaded with double spicy pepperoni and extra mozzarella cheese.",
+        "rating": 4.9,
+        "timeToMake": "12-15 mins",
+        "calories": 1100,
+        "image": "/images/p1.png"
+      },
+      {
+        "id": "pizza-02",
+        "name": "Garden Veggie Pizza",
+        "price": 11.99,
+        "description": "Thick herb-infused crust with pesto base, roasted bell peppers, mushrooms, red onions, and black olives.",
+        "rating": 4.4,
+        "timeToMake": "12-15 mins",
+        "calories": 890,
+        "image": "/images/p2.png"
+      },
+      {
+        "id": "pizza-03",
+        "name": "BBQ Chicken Pizza",
+        "price": 13.49,
+        "description": "Zesty BBQ sauce, grilled chicken, red onions, and fresh cilantro on a golden crust.",
+        "rating": 4.6,
+        "timeToMake": "12-15 mins",
+        "calories": 1050,
+        "image": "/images/p3.png"
+      }
+    ]
+  },
   {
     categoryName: "Drinks",
     items: [
