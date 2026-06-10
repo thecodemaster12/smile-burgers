@@ -100,7 +100,7 @@ const App = () => {
       <div className="min-h-screen bg-orange-50 flex flex-col items-center relative">
         <Toaster position="top-right" reverseOrder={false} />
         <div
-          className={`p-4 flex flex-col fixed top-0 left-0 w-1/2 md:w-1/3 lg:w-1/4 xl h-full bg-black text-white shadow ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out`}
+          className={`p-4 flex flex-col fixed top-0 left-0 w-full md:w-1/3 lg:w-1/4 xl h-full bg-black text-white shadow ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out`}
         >
           <div className="flex justify-end">
             <span
@@ -208,7 +208,7 @@ const App = () => {
           <h2 className="text-center text-3xl font-bold font-pt-sans py-2 mb-2">
             Choose Your Favorite
           </h2>
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap justify-center">
             {burgerMenus.map((category) => (
               <button
                 key={category.categoryName}
@@ -233,13 +233,13 @@ const App = () => {
           </div>
         </div>
 
-        <div className="menu-wrapper flex max-w-4xl w-full min-h-96">
+        <div className="menu-wrapper flex flex-col md:flex-row max-w-5xl w-full min-h-96">
           <div className="menu-left flex-1 p-3 rounded bg-primary">
             <div className="heading">
               <h2 className="title uppercase text-center text-6xl font-bold mb-4 font-pt-sans">
                 menu
               </h2>
-              <p className="data-time mb-4">
+              <p className="data-time mb-4 text-center md:text-left">
                 Everyday from <span className="text-white">10:00am - 10:00pm</span> 
               </p>
             </div>
@@ -252,7 +252,7 @@ const App = () => {
                 <button
                   key={item.id}
                   onClick={() => setCurrentSelectedItem(item)}
-                  className="menu-item w-full text-left flex items-end hover:bg-orange-300 transition-all duration-150 px-2 py-1 rounded cursor-pointer"
+                  className="menu-item w-full text-left flex items-end hover:bg-black transition-all duration-150 px-2 py-1 rounded cursor-pointer text-gray-50 font-bold"
                 >
                   <span>{item.name}</span>
                   <span className="mx-2 flex-1 border-b border-dotted mb-1"></span>
