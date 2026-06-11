@@ -1,3 +1,5 @@
+import { images } from "./images";
+
 const burgerMenu = [
   {
     "categoryName": "Appetizers",
@@ -10,7 +12,7 @@ const burgerMenu = [
         "rating": 4.7,
         "timeToMake": "8-10 mins",
         "calories": 520,
-        "image": "/images/a1.png"
+        "image": images.a1
       },
       {
         "id": "appetizer-02",
@@ -20,7 +22,7 @@ const burgerMenu = [
         "rating": 4.8,
         "timeToMake": "10-12 mins",
         "calories": 640,
-        "image": "/images/a2.png"
+        "image": images.a2
       }
     ]
   },
@@ -35,7 +37,7 @@ const burgerMenu = [
         rating: 4.7,
         timeToMake: "8-10 mins",
         calories: 540,
-        image: "/images/c1.png"
+        image: images.c1
       },
       {
         id: "chick-02",
@@ -45,7 +47,7 @@ const burgerMenu = [
         rating: 4.9,
         timeToMake: "10 mins",
         calories: 580,
-        image: "/images/c2.png"
+        image: images.c2
       },
       {
         id: "chick-03",
@@ -55,7 +57,7 @@ const burgerMenu = [
         rating: 4.5,
         timeToMake: "12 mins",
         calories: 460,
-        image: "/images/c3.png"
+        image: images.c3
       }
     ]
   },
@@ -70,7 +72,7 @@ const burgerMenu = [
         rating: 4.6,
         timeToMake: "7-9 mins",
         calories: 620,
-        image: "/images/b1.png"
+        image: images.b1
       },
       {
         id: "beef-02",
@@ -80,7 +82,7 @@ const burgerMenu = [
         rating: 4.9,
         timeToMake: "12-15 mins",
         calories: 890,
-        image: "/images/b2.png"
+        image: images.b2
       },
       {
         id: "beef-03",
@@ -90,7 +92,7 @@ const burgerMenu = [
         rating: 4.4,
         timeToMake: "10 mins",
         calories: 710,
-        image: "/images/b3.png"
+        image: images.b3
       }
     ]
   },
@@ -105,7 +107,7 @@ const burgerMenu = [
         "rating": 4.6,
         "timeToMake": "6-8 mins",
         "calories": 540,
-        "image": "/images/s1.png"
+        "image": images.s1
       },
       {
         "id": "sandwich-02",
@@ -115,7 +117,7 @@ const burgerMenu = [
         "rating": 4.7,
         "timeToMake": "8-10 mins",
         "calories": 780,
-        "image": "/images/s2.png"
+        "image": images.s2
       },
       {
         "id": "sandwich-03",
@@ -125,7 +127,7 @@ const burgerMenu = [
         "rating": 4.5,
         "timeToMake": "6-8 mins",
         "calories": 490,
-        "image": "/images/s3.png"
+        "image": images.s3
       }
     ]
   },
@@ -140,7 +142,7 @@ const burgerMenu = [
         "rating": 4.9,
         "timeToMake": "12-15 mins",
         "calories": 1100,
-        "image": "/images/p1.png"
+        "image": images.p1
       },
       {
         "id": "pizza-02",
@@ -150,7 +152,7 @@ const burgerMenu = [
         "rating": 4.4,
         "timeToMake": "12-15 mins",
         "calories": 890,
-        "image": "/images/p2.png"
+        "image": images.p2
       },
       {
         "id": "pizza-03",
@@ -160,7 +162,7 @@ const burgerMenu = [
         "rating": 4.6,
         "timeToMake": "12-15 mins",
         "calories": 1050,
-        "image": "/images/p3.png"
+        "image": images.p3
       }
     ]
   },
@@ -175,7 +177,7 @@ const burgerMenu = [
         rating: 4.6,
         timeToMake: "3-5 mins",
         calories: 210,
-        image: "/images/d1.png"
+        image: images.d1
       },
       {
         id: "drink-02",
@@ -185,7 +187,7 @@ const burgerMenu = [
         rating: 4.7,
         timeToMake: "3-5 mins",
         calories: 150,
-        image: "/images/d2.png"
+        image: images.d2
       },
       {
         id: "drink-03",
@@ -195,7 +197,7 @@ const burgerMenu = [
         rating: 4.8,
         timeToMake: "3-5 mins",
         calories: 280,
-        image: "/images/d3.png"
+        image: images.d3
       }
     ]
   }
