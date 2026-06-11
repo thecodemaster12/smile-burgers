@@ -1,6 +1,7 @@
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import burgerMenu from "../data/data.js";
+import BurgerIcon from "./components/BurgerIcon.jsx";
 
 const App = () => {
   const [checkoutCart, setCheckoutCart] = useState({
@@ -24,9 +25,7 @@ const App = () => {
 
   const handelAddToCard = (item) => {
     if (cart === 0) {
-      toast.error("Please select a quantity", {
-        icon: "👆",
-      });
+      toast.error("Please select a quantity");
       return;
     }
 
@@ -180,8 +179,11 @@ const App = () => {
           </div>
         </div>
         <header className="flex items-center justify-between w-full position-sticky top-0 bg-white p-4 shadow">
-          <div className="logo font-bold text-2xl text-primary">
-            QuickBites
+          <div className="logo flex gap-1 items-center font-bold text-2xl text-primary">
+            <BurgerIcon />
+            <span>
+              QuickBites
+            </span>
           </div>
           <div
             onClick={toggleSidebar}
