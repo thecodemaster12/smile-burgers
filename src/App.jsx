@@ -269,6 +269,7 @@ const App = () => {
                 <img
                   src={currentSelectedItem.image}
                   draggable="false"
+                  loading="lazy"
                   className="w-full select-none"
                   alt={currentSelectedItem.name}
                 />
