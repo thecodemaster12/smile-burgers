@@ -1,6 +1,6 @@
-# QuickBites - Modern Food Ordering App
+# FastBites - Modern Food Ordering App
 
-QuickBites is a sleek, responsive food ordering application built with React and Tailwind CSS. It provides a seamless experience for browsing a variety of food categories, viewing detailed item information, and managing a shopping cart.
+FastBites is a sleek, responsive food ordering application built with React and Tailwind CSS. It provides a seamless experience for browsing a variety of food categories, viewing detailed item information, and managing a shopping cart.
 
 ## 🚀 Features
 

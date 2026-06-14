@@ -190,7 +190,7 @@ const App = () => {
         <header className="flex items-center justify-between w-full position-sticky top-0 bg-white p-4 shadow">
           <div className="logo flex gap-1 items-center font-bold text-2xl text-primary">
             <BurgerIcon />
-            <span>QuickBites</span>
+            <span>FastBites</span>
           </div>
           <div
             onClick={toggleSidebar}
