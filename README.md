@@ -29,7 +29,7 @@ FastBites is a sleek, responsive food ordering application built with React and 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/thecodemaster12/smile-burgers.git
+   git clone https://github.com/thecodemaster12/fast-bites.git
    ```
 2. Navigate to the project directory:
    ```bash
