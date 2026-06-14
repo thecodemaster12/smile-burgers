@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=PT+Sans+Narrow:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -7,11 +7,12 @@
   --color-green: #1a9461;
 
   --font-pt-sans: "PT Sans Narrow", sans-serif;
-  --font-tulpen-one: "Tulpen One", cursive;
+  --font-google-sans: "Google Sans", sans-serif;
 }
 
 html, body {
   cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
+  font-family: var(--font-google-sans);
 }
 
 .cursor-primary {
@@ -27,7 +28,7 @@ html, body {
 }
 
 .cat-badge {
-  @apply border hover:bg-orange-300 hover:text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-150 ease-in-out;
+  @apply border border-gray-200 hover:bg-orange-300 hover:text-white font-bold py-2 px-4 rounded-full text-sm transition-all duration-150 ease-in-out;
 }
 
 .cat-badge.active {
